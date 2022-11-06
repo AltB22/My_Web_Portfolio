@@ -3,8 +3,7 @@ header {
     background-color: rgb(9, 43, 78);
     color: aliceblue;
     width: auto;
-    height: 100px;
-    vertical-align: middle;
+    min-height: 100px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -35,3 +34,29 @@ nav a {
     padding-right: 15px;
     color: aliceblue;
 }
+
+.Photos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.My-Photo {
+    max-width: 500px;
+    max-height: 300px;
+    display: flex;
+}
+
+/* .Visible-Qi img {
+    width: 100%;
+    z-index: 0;
+} */
+
+.My-Photo img {
+    max-height: 300px;
+    max-width: 300px;
+    border-radius: 10%;
+    /* z-index: 1000; */
+}
+
