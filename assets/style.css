@@ -1,6 +1,14 @@
+:root {
+    --headerColor:rgb(9, 43, 78);
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+  }
+
 header {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(9, 43, 78);
+    background-color: var(--headerColor);
     color: aliceblue;
     width: auto;
     min-height: 100px;
@@ -14,6 +22,25 @@ h1 {
     vertical-align: middle;
     padding-left: 10px;
 }
+
+h2 {
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: var(--headerColor);
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 160%;
+    text-align: center;
+  }
+
+  h3 {
+    font-weight: bolder;
+    font-size:x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+ } 
 
 nav {
     width: 100%;
@@ -39,24 +66,74 @@ nav a {
     width: 100%;
     display: flex;
     justify-content: center;
-    
 }
 
 .My-Photo {
-    max-width: 500px;
-    max-height: 300px;
+    max-width: 100%;
     display: flex;
+    justify-content: center;
 }
-
-/* .Visible-Qi img {
-    width: 100%;
-    z-index: 0;
-} */
 
 .My-Photo img {
     max-height: 300px;
     max-width: 300px;
     border-radius: 10%;
-    /* z-index: 1000; */
 }
 
+p {
+    margin-top: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.lower-portfolio {
+    width: 100%;
+    display: inline-flex;
+    justify-items: center;
+
+} 
+
+#Marketing-Meeting {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+  }
+
+  .Books {
+    display: block;
+    justify-content: center;
+    
+    width: 50%;
+  }
+  #Books {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    max-width: 50%;
+  }
+
+  .RPS {
+    display: block;
+    justify-content: center;
+    width: 50%;
+  }
+  #RPS {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    max-width: 50%;
+  }
+
+  .Contact {
+    display: block;
+    list-style: none;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  footer p {
+    text-align: center;
+  }
