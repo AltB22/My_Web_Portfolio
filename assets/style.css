@@ -1,13 +1,11 @@
+/* creates variables for universal color and font family for all headings */
 :root {
     --headerColor:rgb(9, 43, 78);
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    height: 100%;
+    --headerFont: Arial, Helvetica, sans-serif;
   }
-
+/* Styling for header section using vars above, font color, height, and flex display */
 header {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:var(--headerFont);
     background-color: var(--headerColor);
     color: aliceblue;
     width: auto;
@@ -15,45 +13,43 @@ header {
     display: flex;
     flex-wrap: wrap;
 }
-
+/* Heading 1 font size and pads out a bit from left edge for William Massie */
 h1 {
-    font-weight: none;
     font-size: 50px;
-    vertical-align: middle;
     padding-left: 10px;
 }
-
+/* Heading 2 specs for sections in main elemement that nav links connect to */
 h2 {
     margin-left: 50px;
     margin-right: 50px;
     background-color: var(--headerColor);
     color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: var(--headerFont);
     font-size: 160%;
     text-align: center;
   }
-
+/* Styling for Titles of Portfolio projects */
   h3 {
     font-weight: bolder;
     font-size:x-large;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: var(--headerFont);
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
  } 
-
+/* Nav bar styling to make it read horizontally & over to the right */
 nav {
     width: 100%;
     display: inline-flex;
     justify-content: flex-end;
-    text-decoration: none;
 }
-
+/* Nav bar styling to make it read horizontally, over to the right, no bullet points for list */
 li {
     display: inline;
     justify-content: space-evenly;
     text-decoration: none;
 }
+/* Nav bar styling to remove underline for links and create space around them.  Text color */
 
 nav a {
     text-decoration: none;
@@ -61,79 +57,83 @@ nav a {
     padding-right: 15px;
     color: aliceblue;
 }
-
+/* Container for photo of me element as flex */
 .Photos {
     width: 100%;
     display: flex;
-    justify-content: center;
 }
-
+/* portrait photo of me as flex and centered */
 .My-Photo {
     max-width: 100%;
     display: flex;
     justify-content: center;
 }
-
+/* establshes max sizing of portrait photo and rounds the corners */
 .My-Photo img {
     max-height: 300px;
     max-width: 300px;
     border-radius: 10%;
 }
-
+/* Makes paragraph content margined from edges and in line with the heading bars */
 p {
     margin-top: 5px;
     margin-left: 50px;
     margin-right: 50px;
 }
-
+/* Container for the Prework Study guide & Rock Paper Scissors so they follow the horizonal flow and are centered */
 .lower-portfolio {
     width: 100%;
     display: inline-flex;
     justify-items: center;
 
 } 
-
+/* Specs for Horiseon image to be centered above the other 2 projects */
 #Marketing-Meeting {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 65%;
-  }
-
-  .Books {
-    display: block;
+}
+/* Container for prework study guide to be centered and take up half the space of .lower-portfolio */
+.Books {
     justify-content: center;
-    
     width: 50%;
-  }
-  #Books {
+}
+/* Specs for image of books */
+#Books {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
     max-width: 50%;
-  }
-
-  .RPS {
-    display: block;
+}
+/* Container for Rock Paper Scissors to be centered and take up half the space of .lower-portfolio */
+.RPS {
     justify-content: center;
     width: 50%;
-  }
-  #RPS {
+}
+/* Specs for image of Rock Paper Scissors */
+#RPS {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
     max-width: 50%;
-  }
-
-  .Contact {
+}
+/* Contact section element stacks vertically, no bulltes, centered, and headerFont var*/
+.Contact {
     display: block;
     list-style: none;
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
+    font-family: var(--headerFont);
+}
+/* Removes underline and purple link color from email address */
+.Contact a {
+    text-decoration: none;
+    color: black;
+}
 
-  footer p {
+/* Centers footer */
+footer p {
     text-align: center;
-  }
+}
