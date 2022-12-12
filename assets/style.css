@@ -120,6 +120,19 @@ p {
     margin-bottom: 20px;
     max-width: 50%;
 }
+
+.Cocktails {
+    justify-content: center;
+    width: 50%;
+}
+/* Specs for image of Rock Paper Scissors */
+#Cocktails {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    max-width: 50%;
+}
 /* Contact section element stacks vertically, no bulltes, centered, and headerFont var*/
 .Contact {
     display: block;
