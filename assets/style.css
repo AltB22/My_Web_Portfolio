@@ -126,8 +126,22 @@ p {
     justify-content: center;
     width: 50%;
 }
+
 /* Specs for image of Rock Paper Scissors */
 #Cocktails {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    max-width: 50%;
+}
+
+.Ocean-Pulse {
+    justify-content: center;
+    width: 50%;
+}
+
+#Ocean-Pulse {
     display: block;
     margin-left: auto;
     margin-right: auto;
